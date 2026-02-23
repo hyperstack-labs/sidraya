@@ -313,32 +313,43 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Floating Final CTA */}
-          <section className="py-24 sm:py-32 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          {/* Call to Action */}
+          <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
             <motion.div
-              initial={{ opacity: 0, scale: 0.95, y: 50 }}
-              whileInView={{ opacity: 1, scale: 1, y: 0 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              className="relative rounded-[3rem] overflow-hidden border border-primary/20 shadow-[0_0_100px_rgba(251,191,36,0.1)]"
+              className="relative rounded-3xl overflow-hidden bg-card border border-border"
             >
-              <div className="absolute inset-0 bg-linear-to-tr from-card via-background to-primary/10" />
-              <div className="relative py-16 px-6 sm:px-16 text-center flex flex-col items-center">
-                <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mb-6">
-                  <Clapperboard className="w-8 h-8 text-primary" />
+              <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                <div className="absolute top-0 right-0 w-[50%] h-full bg-primary/5 rounded-full blur-[80px]" />
+              </div>
+
+              <div className="relative py-12 px-6 sm:px-12 flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+                <div className="max-w-xl">
+                  <h2 className="text-3xl sm:text-4xl font-extrabold text-foreground mb-4 tracking-tight">
+                    Your voice <span className="text-primary italic">belongs</span> here.
+                  </h2>
+                  <p className="text-base sm:text-lg text-muted-foreground leading-relaxed">
+                    Join a community that values depth over virality. Build the future of faith-based content with us.
+                  </p>
                 </div>
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-foreground mb-4 tracking-tight">
-                  Ready to start?
-                </h2>
-                <p className="text-lg text-muted-foreground max-w-2xl mb-10">
-                  Join Sidraya and start sharing your videos today.
-                </p>
-                <div onClick={() => setIsLoggedIn(true)} className="relative group cursor-pointer inline-block">
-                  <div className="absolute -inset-2 bg-linear-to-r from-primary to-[#FDE047] rounded-full blur opacity-50 group-hover:opacity-100 transition duration-500"></div>
-                  <button className="relative px-10 py-4 bg-background border border-border group-hover:border-primary text-foreground rounded-full font-bold text-lg hover:scale-[1.02] transition-transform flex items-center gap-3">
-                    Create Your Account
-                    <ArrowRight className="w-5 h-5 text-primary group-hover:translate-x-1 transition-transform" />
+
+                <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto shrink-0">
+                  <button
+                    onClick={() => setIsLoggedIn(true)}
+                    className="px-6 py-3 bg-primary text-primary-foreground rounded-full font-bold hover:scale-105 transition-transform flex items-center justify-center gap-2"
+                  >
+                    Join the Community
+                    <ArrowRight className="w-5 h-5" />
                   </button>
+
+                  <Link
+                    href="#creators"
+                    className="px-6 py-3 rounded-full font-bold border border-border/50 bg-background/50 hover:bg-muted/50 transition-colors backdrop-blur-md text-foreground text-center"
+                  >
+                    Meet Creators
+                  </Link>
                 </div>
               </div>
             </motion.div>
