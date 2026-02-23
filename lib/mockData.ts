@@ -37,7 +37,7 @@ export const mockVideos: Video[] = [
   {
     id: '1',
     title: 'Learning Quranic Arabic Basics',
-    thumbnail: 'https://images.unsplash.com/photo-1503676260728-1c00da068326?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/learning-quranic-arabic.png',
     duration: '12:35',
     views: 15420,
     likes: 1204,
@@ -50,7 +50,7 @@ export const mockVideos: Video[] = [
   {
     id: '2',
     title: 'Sunset Prayer Reflections',
-    thumbnail: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/sunset-prayer.png',
     duration: '8:42',
     views: 8920,
     likes: 672,
@@ -63,7 +63,7 @@ export const mockVideos: Video[] = [
   {
     id: '3',
     title: 'Halal Cooking Tutorial: Traditional Biryani',
-    thumbnail: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/halal-cooking.png',
     duration: '18:20',
     views: 23840,
     likes: 1856,
@@ -76,7 +76,7 @@ export const mockVideos: Video[] = [
   {
     id: '4',
     title: 'Islamic History: The Golden Age',
-    thumbnail: 'https://images.unsplash.com/photo-1507842217343-583f20270319?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/islamic-history.png',
     duration: '25:10',
     views: 34200,
     likes: 2341,
@@ -89,7 +89,7 @@ export const mockVideos: Video[] = [
   {
     id: '5',
     title: 'Fitness Journey: Ramadan Edition',
-    thumbnail: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/fitness-journey.png',
     duration: '14:55',
     views: 19760,
     likes: 1512,
