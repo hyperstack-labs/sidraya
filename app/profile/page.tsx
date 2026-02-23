@@ -50,11 +50,11 @@ export default function ProfilePage() {
 
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <Image
-                src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${userName}`}
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
                 alt={userName}
                 width={120}
                 height={120}
-                className="rounded-full border-4 border-card -mt-16 sm:-mt-16"
+                className="rounded-full border-4 border-card -mt-16 sm:-mt-16 object-cover aspect-square"
               />
 
               <div className="flex-1">
