@@ -102,7 +102,7 @@ export const mockVideos: Video[] = [
   {
     id: '6',
     title: 'Arabic Calligraphy for Beginners',
-    thumbnail: 'https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=300&fit=crop',
+    thumbnail: '/thumbnails/arabic-calligraphy.png',
     duration: '16:30',
     views: 12450,
     likes: 891,
