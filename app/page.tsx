@@ -8,7 +8,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Play, Video as VideoIcon, Gauge, Globe, Tv, Clapperboard } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { motion, Variants } from 'framer-motion';
 
 export default function Home() {
   const [selectedVideo, setSelectedVideo] = useState<Video | null>(null);
@@ -23,12 +23,12 @@ export default function Home() {
   }
 
   // Fade up animation variants
-  const fadeUp = {
+  const fadeUp: Variants = {
     hidden: { opacity: 0, y: 40 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" as const } }
   };
 
-  const staggerContainer = {
+  const staggerContainer: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -79,7 +79,7 @@ export default function Home() {
       <div className="min-h-screen bg-background selection:bg-primary/30 selection:text-primary overflow-x-hidden">
         <main>
           {/* Cinematic Hero Section */}
-          <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-20">
+          <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28">
             {/* Massive Glowing Backdrop */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[1000px] max-h-[1000px] bg-primary/20 rounded-full blur-[150px] pointer-events-none" />
 

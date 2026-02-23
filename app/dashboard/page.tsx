@@ -55,7 +55,7 @@ export default function DashboardPage() {
     <>
       <Header isLoggedIn={true} onLogout={handleLogout} />
       <div className="min-h-screen bg-background">
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12">
           {/* Dashboard Header */}
           <div className="mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <div>
@@ -97,11 +97,10 @@ export default function DashboardPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-2 rounded-lg font-medium transition whitespace-nowrap ${
-                    selectedCategory === category
+                  className={`px-4 py-2 rounded-lg font-medium transition whitespace-nowrap ${selectedCategory === category
                       ? 'bg-primary text-primary-foreground'
                       : 'bg-card border border-border text-foreground hover:border-primary'
-                  }`}
+                    }`}
                 >
                   {category}
                 </button>

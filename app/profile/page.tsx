@@ -43,10 +43,10 @@ export default function ProfilePage() {
     <>
       <Header isLoggedIn={true} onLogout={handleLogout} />
       <div className="min-h-screen bg-background">
-        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-12">
           {/* Profile Header */}
           <div className="mb-12">
-            <div className="h-32 bg-gradient-to-r from-primary/20 to-accent/20 rounded-lg mb-6" />
+            <div className="h-32 bg-linear-to-r from-primary/20 to-accent/20 rounded-lg mb-6" />
 
             <div className="flex flex-col sm:flex-row gap-6 items-start">
               <Image
